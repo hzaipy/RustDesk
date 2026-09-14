@@ -403,7 +403,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    translate("Your Desktop"),
+                    translate("Your Desktop") + (kIsSos ? " SOS版" : ""),
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
