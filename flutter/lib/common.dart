@@ -1,4 +1,5 @@
 import 'dart:async';
+const kIsSos = String.fromEnvironment('SOS') == '1' || String.fromEnvironment('SOS') == 'true';
 import 'dart:convert';
 import 'dart:math';
 
