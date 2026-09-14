@@ -71,7 +71,7 @@ class DesktopSettingPage extends StatefulWidget {
         bind.mainGetBuildinOption(key: kOptionHideSecuritySetting) != 'Y')
       SettingsTabKey.safety,
     if (!bind.isDisableSettings() &&
-        bind.mainGetBuildinOption(key: kOptionHideNetworkSetting) != 'Y')
+        (bind.mainGetBuildinOption(key: kOptionHideNetworkSetting) != 'Y' && !kIsSos))
       SettingsTabKey.network,
     if (!bind.isIncomingOnly()) SettingsTabKey.display,
     if (!isWeb && !bind.isIncomingOnly() && bind.pluginFeatureIsEnabled())
