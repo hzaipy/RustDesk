@@ -1719,7 +1719,7 @@ jobs:
           prerelease: true
           tag_name: ${{ env.TAG_NAME }}
           files: |
-            res/rustdesk-${{ env.VERSION }}*.zst
+            res/rustdesk-*.zst
 
   build-rustdesk-linux-sciter:
     if: ${{ inputs.upload-artifact }}
